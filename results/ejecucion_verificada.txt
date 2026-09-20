@@ -1,0 +1,19 @@
+Modelo elegido por MAE de validación cruzada: RandomForest
+          modelo        area  MAE_CV  MAE_CV_std  RMSE_CV   R2_CV
+    RandomForest     Árboles  0.5066      0.0195   0.6580  0.3421
+      SVR_lineal         SVM  0.5127      0.0228   0.6697  0.3190
+          Lineal Regresiones  0.5175      0.0180   0.6684  0.3209
+           Ridge Regresiones  0.5180      0.0188   0.6675  0.3233
+         SVR_RBF         SVM  0.5255      0.0226   0.6909  0.2752
+           Arbol     Árboles  0.5501      0.0172   0.7234  0.2071
+Referencia_media  Referencia  0.6916      0.0385   0.8179 -0.0108
+
+Evaluación final (no usar para reajustar):
+           modelo  MAE_test  RMSE_test  R2_test  seleccionado_por_cv
+Referencia_media    0.7049     0.8443  -0.0063                False
+          Lineal    0.5041     0.6565   0.3915                False
+           Ridge    0.5036     0.6535   0.3970                False
+           Arbol    0.4949     0.6474   0.4083                False
+    RandomForest    0.4645     0.6152   0.4657                 True
+      SVR_lineal    0.4903     0.6505   0.4026                False
+         SVR_RBF    0.4846     0.6555   0.3934                False
